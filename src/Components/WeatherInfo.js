@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 import { useState } from "react";
 export default function WeatherInfo(props) {
-  const url =`http://api.weatherapi.com/v1/forecast.json?key=${props.apiKey}&q=${props.cityName}&days=1&aqi=yes&alerts=no`;
+  const url =`https://api.weatherapi.com/v1/forecast.json?key=${props.apiKey}&q=${props.cityName}&days=1&aqi=yes&alerts=no`;
   const [Wind_speed,setWindSpeed] = useState(0);
   const [Humidity,setHumidity] = useState(0);
   const [Visibility,setVisibility] = useState(0);
