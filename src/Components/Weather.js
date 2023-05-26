@@ -5,7 +5,7 @@ import sunnyBG from "./Daybg.avif";
 import nightBG from "./M-Maggs-pixabay.jpg";
 import { useState } from "react";
 export default function Weather(props) {
-  const url = `http://api.weatherapi.com/v1/current.json?key=${props.apiKey}&q=${props.cityName}&aqi=yes`;
+  const url = `https://api.weatherapi.com/v1/current.json?key=${props.apiKey}&q=${props.cityName}&aqi=yes`;
   const [tempC, setTempC] = useState("");
   const [status, setStatus] = useState("");
   const [CityName, SetCityName] = useState("");
