@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Forecast from "./Components/Forecast";
+import Navbar from "./Components/Navbar";
+import Search from "./Components/Search";
+import Weather from "./Components/Weather";
+import WeatherInfo from "./Components/WeatherInfo";
+import React, { useEffect, useState } from "react";
 function App() {
+  const [city, setCity] = useState("");
+  const onsearch = (city_name) => {
+    setCity(city_name);
+  };
+  const apiKey = process.env.REACT_APP_WEATHER_API;
+  // console.log(apiKey);
+
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition(function (position) {
+    setCity(`${position.coords.latitude} ${position.coords.longitude}`) 
+       
+    });
+    return () => {};
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Search on_search={onsearch} />
+      <div className="container">
+        <Weather cityName={city} apiKey={apiKey} />
+        <WeatherInfo cityName={city} apiKey={apiKey}/>
+        <Forecast cityName={city} apiKey={apiKey} />
+      </div>
+    </>
   );
 }
 

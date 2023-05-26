@@ -32,7 +32,156 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+svg {
+  margin-right: 10px;
+}
+
+#bottom-vertical-align {
+  vertical-align: -2px;
+}
+
+.container {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 83px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 26rem;
+  height: 23rem;
+  flex: 0 0 auto;
+}
+
+.Mytemperature {
+  font-size: 4rem;
+  color: #ffe200;
+  font-weight: 450;
+
+}
+
+.WeatherIcon {
+  width: 94px;
+  position: relative;
+  right: 0px;
+}
+
+/* .weather_info {
+  background-image : linear-gradient (#ff0000,#00ff00);
+} */
+.d-flex{
+  margin-top: 15px;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 68px;
+}
+
+.weather_items {
+  display: flex;
+  justify-content: space-between;
+  margin: 18px;
+}
+
+.VALUE {
+  float: left;
+}
+
+.weather_items .Vector,
+.weather_items .Metric {
+  display: table-row;
+  font-size: 0.6rem;
+  font-weight: 500;
+}
+
+.weatherInfo {
+  margin-top: 68px;
+}
+
+.my_tags{
+  border: 3px solid white;
+  background-color: #546266;
+  color: azure;
+}
+
+#Press_tag {
+  margin-left: -14px;
+}
+.my_status{
+  font-size: 12px;
+}
+th,td{
+  text-align: center;
+  font-size: 18px;
+  width: 67px;
+}
+.for_image{
+  width: 40px;
+}
+.Wlabels{
+  width: 115px;
+  height: 41px;
+  font-size: 14px;
+  text-align: left;
+}
+@media(max-width:466px) and (min-width :400px) {
+  .card {
+    width: 24rem;
+    height: 23rem;
+    flex: 0 0 auto;
+  }
+  
+  .Wlabels{
+    width: 115px;
+    height: 41px;
+    font-size: 12px;
+    text-align: left;
+  }
+  .my_status{
+    font-size: 12px;
+  }
+  th,td{
+    text-align: center;
+    font-size: 15px;
+    width: 67px;
+  }
+}
+
+@media(max-width:400px) {
+  .card {
+    width: 20rem;
+    height: 22rem;
+    flex: 0 0 auto;
+  }
+
+  .details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 81px;
+    font-size: 14px;
+  }
+  .Wlabels{
+    width: 115px;
+    height: 41px;
+    font-size: 12px;
+    text-align: left;
+  }
+  .my_status{
+    font-size: 10px;
+  }
+  th,td{
+    text-align: center;
+    font-size: 13px;
+    width: 67px;
   }
 }
