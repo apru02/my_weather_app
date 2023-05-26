@@ -5,7 +5,7 @@ import my_image2 from "./weatherIcons/sun.png";
 import my_image3 from "./weatherIcons/sun.png";
 import my_image4 from "./weatherIcons/sun.png";
 export default function Forecast(props) {
-  const url = `http://api.weatherapi.com/v1/forecast.json?key=${props.apiKey}&q=${props.cityName}&days=4&aqi=yes&alerts=no`;
+  const url = `https://api.weatherapi.com/v1/forecast.json?key=${props.apiKey}&q=${props.cityName}&days=4&aqi=yes&alerts=no`;
   const [date1, setDate1] = useState("27/05");
   const [date2, setDate2] = useState("28/05");
   const [date3, setDate3] = useState("29/05");
