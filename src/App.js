@@ -10,7 +10,7 @@ function App() {
   const onsearch = (city_name) => {
     setCity(city_name);
   };
-  const apiKey = process.env.REACT_APP_WEATHER_API;
+  const apiKey = "c2c24644b06948599a1120531232505";
   // console.log(apiKey);
 
   useEffect(() => {
