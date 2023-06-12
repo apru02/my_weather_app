@@ -123,10 +123,10 @@ svg {
 th,td{
   text-align: center;
   font-size: 18px;
-  width: 67px;
+  width: 89px;
 }
 .for_image{
-  width: 40px;
+  width: 56px;
 }
 .Wlabels{
   width: 115px;
@@ -153,7 +153,7 @@ th,td{
   th,td{
     text-align: center;
     font-size: 15px;
-    width: 67px;
+    width: 89px;
   }
 }
 
@@ -182,6 +182,6 @@ th,td{
   th,td{
     text-align: center;
     font-size: 13px;
-    width: 67px;
+    width: 55px;
   }
 }
